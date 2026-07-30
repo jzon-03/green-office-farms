@@ -15,7 +15,7 @@ export class AboutComponent {
   ];
 
   team = [
-    { initials: 'JG', name: 'Jayson Guevarra', role: 'Founder & CEO', bio: 'Self-taught hydroponics farmer. Passionate about sustainable urban agriculture. Software Engineer as trade.' },
+    { initials: 'JG', name: 'Jayson Guevarra', role: 'Founder & CEO', bio: 'Self-taught hydroponics farmer. Passionate about sustainable urban agriculture. Software Engineer by trade.' },
     
   ];
 }
