@@ -1,0 +1,224 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+
+  height: 80px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 30px;
+}
+
+
+/* Logo */
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  text-decoration:none;
+  color:#1f2937;
+}
+
+
+.logo-icon {
+  font-size:34px;
+}
+
+
+.brand {
+  display:block;
+
+  font-size:20px;
+  font-weight:700;
+
+  color:#166534;
+}
+
+
+.logo small {
+  display:block;
+
+  font-size:12px;
+  color:#6b7280;
+}
+
+
+
+/* Menu */
+
+
+.nav-links {
+
+  display:flex;
+  gap:35px;
+
+  list-style:none;
+
+  margin:0;
+  padding:0;
+}
+
+
+.nav-links a {
+
+  text-decoration:none;
+
+  color:#374151;
+
+  font-weight:500;
+
+  transition:.3s;
+
+}
+
+
+.nav-links a:hover {
+
+  color:#16a34a;
+
+}
+
+
+
+/* Button */
+
+.contact-btn {
+
+  background:#16a34a;
+
+  color:white;
+
+  padding:13px 24px;
+
+  border-radius:30px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+
+.contact-btn:hover {
+
+  background:#15803d;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+/* Mobile */
+
+
+.menu-btn {
+
+  display:none;
+
+  background:none;
+
+  border:0;
+
+  font-size:28px;
+
+}
+
+
+
+.mobile-menu {
+
+  display:none;
+
+}
+
+
+@media(max-width:900px){
+
+
+.nav-links,
+.contact-btn {
+
+  display:none;
+
+}
+
+
+.menu-btn {
+
+  display:block;
+
+}
+
+
+.mobile-menu {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+  padding:25px 30px;
+
+  background:white;
+
+  max-height:0;
+
+  overflow:hidden;
+
+  transition:.3s;
+
+}
+
+
+.mobile-menu.open {
+
+  max-height:400px;
+
+}
+
+
+.mobile-menu a {
+
+  text-decoration:none;
+
+  color:#374151;
+
+  font-weight:500;
+
+}
+
+
+.mobile-contact {
+
+  background:#16a34a;
+
+  color:white !important;
+
+  padding:12px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+}
+
+
+}
