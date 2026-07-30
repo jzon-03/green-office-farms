@@ -1,0 +1,53 @@
+<!-- Header -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Ready to Grow<br><span class="accent">Something Great?</span></h1>
+    <p class="hero-sub">
+      Fill out the form below and we'll reach out to discuss how a hydroponic farm
+      can work for your space.
+    </p>
+  </div>
+</section>
+
+<!-- Content -->
+<section class="content">
+  <div class="container layout">
+
+    <!-- Google Form embed -->
+    <div class="form-wrapper">
+      <iframe
+        [src]="formUrl | safe"
+        width="100%"
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Contact Form">
+        Loading…
+      </iframe>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="contact-card">
+        <span class="card-icon">📬</span>
+        <h3>Email Us Directly</h3>
+        <a class="email-link" [href]="'mailto:' + email">{{ email }}</a>
+      </div>
+
+      <div class="contact-card">
+        <span class="card-icon">⏱️</span>
+        <h3>Response Time</h3>
+        <p>We typically respond within one business day.</p>
+      </div>
+
+      <div class="contact-card">
+        <span class="card-icon">📍</span>
+        <h3>Service Area</h3>
+        <p>We currently serve offices in Monroe County.</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
