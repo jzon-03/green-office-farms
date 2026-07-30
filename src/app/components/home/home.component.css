@@ -1,0 +1,357 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Inter,sans-serif;
+}
+
+section{
+    padding:100px 8%;
+}
+
+/**************** HERO ****************/
+
+.hero{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
+
+    min-height:90vh;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-image{
+
+    flex:1;
+    text-align:right;
+
+}
+
+.hero-image img{
+
+    width:100%;
+    max-width:650px;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#E8F5E9;
+
+    color:#2E7D32;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1 span{
+
+    color:#2E7D32;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#2E7D32;
+
+    color:white;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1B5E20;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid #2E7D32;
+
+    color:#2E7D32;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+}
+
+/**************** FEATURES ****************/
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    background:#F7FAF8;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+/**************** HOW ****************/
+
+.how{
+
+    text-align:center;
+
+}
+
+.steps{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.steps div{
+
+    width:220px;
+
+}
+
+.steps span{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:60px;
+
+    height:60px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+/**************** BENEFITS ****************/
+
+.benefits{
+
+    display:flex;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.left,
+.right{
+
+    flex:1;
+
+}
+
+.left img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.right h2{
+
+    font-size:42px;
+
+}
+
+.right li{
+
+    list-style:none;
+
+    margin:20px 0;
+
+    font-size:20px;
+
+}
+
+/**************** CTA ****************/
+
+.cta{
+
+    background:linear-gradient(135deg,#2E7D32,#4CAF50);
+
+    color:white;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    margin:100px 8%;
+
+}
+
+.cta h2{
+
+    font-size:52px;
+
+}
+
+.cta p{
+
+    font-size:22px;
+
+    margin-bottom:40px;
+
+}
+
+.cta .btn-primary{
+
+    background:white;
+
+    color:#2E7D32;
+
+}
+
+/************** RESPONSIVE ************/
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+}
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+.benefits{
+
+    flex-direction:column;
+
+}
+
+.steps{
+
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+}

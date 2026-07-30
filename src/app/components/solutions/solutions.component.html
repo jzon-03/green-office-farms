@@ -1,0 +1,136 @@
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            OUR SOLUTIONS
+        </span>
+
+        <h1>
+            Indoor Hydroponic Solutions
+            Built For Modern Workplaces
+        </h1>
+
+        <p>
+            Green Office Farms designs, installs, and maintains
+            beautiful indoor hydroponic systems that improve
+            employee wellness and support corporate sustainability.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="solutions">
+
+    <div
+        class="solution"
+        *ngFor="let solution of solutions; let i=index"
+        [class.reverse]="i % 2 != 0">
+
+        <div class="solution-image">
+
+            <img [src]="solution.image">
+
+        </div>
+
+        <div class="solution-content">
+
+            <div class="icon">
+                {{solution.icon}}
+            </div>
+
+            <h2>
+                {{solution.title}}
+            </h2>
+
+            <p>
+                {{solution.description}}
+            </p>
+
+            <ul>
+
+                <li *ngFor="let feature of solution.features">
+
+                    ✔ {{feature}}
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="managed">
+
+    <h2>
+        Fully Managed Service
+    </h2>
+
+    <p>
+
+        We handle everything so your team doesn't have to.
+
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            🌱
+
+            <h3>Planting</h3>
+
+        </div>
+
+        <div class="card">
+
+            🧪
+
+            <h3>Nutrients</h3>
+
+        </div>
+
+        <div class="card">
+
+            🧹
+
+            <h3>Cleaning</h3>
+
+        </div>
+
+        <div class="card">
+
+            📈
+
+            <h3>Monitoring</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>
+        Ready To Build A Healthier Workplace?
+    </h2>
+
+    <p>
+
+        Ask us about our pilot installation program.
+
+    </p>
+
+    <button>
+        Schedule Consultation
+    </button>
+
+</section>

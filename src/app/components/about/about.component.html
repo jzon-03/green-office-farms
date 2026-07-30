@@ -1,0 +1,95 @@
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Our Story</span>
+    <h1>Growing a Greener<br><span class="accent">Workplace Culture</span></h1>
+    <p class="hero-sub">
+      Green Office Farms was founded on a simple belief — that fresh food, living greenery,
+      and healthy workplaces belong together. We bring hydroponic farms directly into offices,
+      creating spaces where people and plants thrive side by side.
+    </p>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="mission">
+  <div class="container grid-2">
+    <div class="mission-card">
+      <span class="card-icon">🌱</span>
+      <h2>Our Mission</h2>
+      <p>
+        To transform ordinary workplaces into living, breathing ecosystems — improving employee
+        wellbeing, reducing carbon footprints, and delivering farm-fresh produce without leaving
+        the building.
+      </p>
+    </div>
+    <div class="mission-card accent-card">
+      <span class="card-icon">🔭</span>
+      <h2>Our Vision</h2>
+      <p>
+        A future where every office, school, and corporate campus grows a meaningful portion of
+        its own food — sustainably, beautifully, and effortlessly.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<!-- <section class="stats">
+  <div class="container stats-grid">
+    <div class="stat">
+      <span class="stat-number">120+</span>
+      <span class="stat-label">Installations</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">40+</span>
+      <span class="stat-label">Corporate Clients</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">95%</span>
+      <span class="stat-label">Less Water Than Soil Farming</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number">0</span>
+      <span class="stat-label">Pesticides Used</span>
+    </div>
+  </div>
+</section> -->
+
+<!-- Values -->
+<section class="values">
+  <div class="container">
+    <h2 class="section-title">What Drives Us</h2>
+    <div class="values-grid">
+      <div class="value-card" *ngFor="let v of values">
+        <span class="value-icon">{{ v.icon }}</span>
+        <h3>{{ v.title }}</h3>
+        <p>{{ v.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="team">
+  <div class="container">
+    <h2 class="section-title">The People Behind the Plants</h2>
+    <div class="team-grid">
+      <div class="team-card" *ngFor="let m of team">
+        <div class="avatar">{{ m.initials }}</div>
+        <h3>{{ m.name }}</h3>
+        <span class="role">{{ m.role }}</span>
+        <p>{{ m.bio }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to bring a farm to your office?</h2>
+    <p>Let's talk about what's possible for your space.</p>
+    <a class="cta-btn" routerLink="/contact">Schedule a Free Consultation</a>
+  </div>
+</section>
