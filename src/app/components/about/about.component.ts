@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../../seo.service';
 
 @Component({
   selector: 'app-about',
@@ -6,7 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  constructor(private seo: SeoService) {}
+
+  ngOnInit(): void {
+    this.seo.set(
+      'About Us | Green Office Farms — Monroe County Hydroponics',
+      'Green Office Farms is Monroe County\'s office hydroponics company. We design, install, and maintain beautiful indoor hydroponic farms that transform workplaces.',
+    );
+  }
   values = [
     { icon: '♻️', title: 'Sustainability', desc: 'Every system we install reduces food miles, cuts water usage by up to 95%, and eliminates pesticides entirely.' },
     { icon: '🤝', title: 'Partnership', desc: 'We don\'t just install and leave. Our team provides ongoing care, harvests, and support for the life of your farm.' },

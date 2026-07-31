@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../../seo.service';
 
 @Component({
   selector: 'app-solutions',
@@ -6,7 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './solutions.component.html',
   styleUrl: './solutions.component.css',
 })
-export class SolutionsComponent {
+export class SolutionsComponent implements OnInit {
+  constructor(private seo: SeoService) {}
+
+  ngOnInit(): void {
+    this.seo.set(
+      'Hydroponic Solutions for Offices | Green Office Farms',
+      'Explore modular hydroponic walls, countertop grow stations, and full indoor farm installations designed for Monroe County workplaces.',
+    );
+  }
 solutions = [
     {
       icon: '🌱',

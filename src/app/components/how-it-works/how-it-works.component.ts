@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../../seo.service';
 
 @Component({
   selector: 'app-how-it-works',
@@ -6,7 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './how-it-works.component.html',
   styleUrl: './how-it-works.component.css',
 })
-export class HowItWorksComponent {
+export class HowItWorksComponent implements OnInit {
+  constructor(private seo: SeoService) {}
+
+  ngOnInit(): void {
+    this.seo.set(
+      'How Office Hydroponics Works | Green Office Farms',
+      'From design consultation to installation and ongoing maintenance — learn how we set up a thriving indoor hydroponic farm in your Monroe County office.',
+    );
+  }
 steps = [
 
     {
