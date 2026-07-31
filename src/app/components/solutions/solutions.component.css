@@ -242,7 +242,7 @@ section{
 
 }
 
-.cta button{
+.contact-btn{
 
     border:none;
 
@@ -262,7 +262,7 @@ section{
 
 }
 
-.cta button:hover{
+.contact-btn:hover{
 
     background:#1B5E20;
 

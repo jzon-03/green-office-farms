@@ -14,23 +14,23 @@
     <!-- Desktop Menu -->
     <ul class="nav-links">
       <li>
-        <a routerLink="/">Home</a>
+        <a routerLink="/home" [routerLinkActive]="['active']">Home</a>
       </li>
 
       <li>
-        <a routerLink="/solutions">Solutions</a>
+        <a routerLink="/solutions" [routerLinkActive]="['active']">Solutions</a>
       </li>
 
       <li>
-        <a routerLink="/how-it-works">How It Works</a>
+        <a routerLink="/how-it-works" [routerLinkActive]="['active']">How It Works</a>
       </li>
 
-      <li>
-        <a routerLink="/industries">Industries</a>
-      </li>
+      <!-- <li>
+        <a routerLink="/industries" [routerLinkActive]="['active']">Industries</a>
+      </li> -->
 
       <li>
-        <a routerLink="/about">About</a>
+        <a routerLink="/about" [routerLinkActive]="['active']">About</a>
       </li>
     </ul>
 
@@ -52,11 +52,11 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu" [class.open]="menuOpen">
 
-    <a routerLink="/">Home</a>
-    <a routerLink="/solutions">Solutions</a>
-    <a routerLink="/how-it-works">How It Works</a>
-    <!-- <a routerLink="/industries">Industries</a> -->
-    <a routerLink="/about">About</a>
+    <a routerLink="/" [routerLinkActive]="['active']">Home</a>
+    <a routerLink="/solutions" [routerLinkActive]="['active']">Solutions</a>
+    <a routerLink="/how-it-works" [routerLinkActive]="['active']">How It Works</a>
+    <!-- <a routerLink="/industries" [routerLinkActive]="['active']">Industries</a> -->
+    <a routerLink="/about" [routerLinkActive]="['active']">About</a>
 
     <a class="mobile-contact" routerLink="/contact">
       Schedule Consultation
