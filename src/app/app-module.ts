@@ -11,6 +11,7 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SafePipe } from './safe.pipe';
+import { FunFactsComponent } from './components/fun-facts/fun-facts.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SafePipe } from './safe.pipe';
     AboutComponent,
     ContactComponent,
     SafePipe,
+    FunFactsComponent,
   ],
   imports: [
     BrowserModule,

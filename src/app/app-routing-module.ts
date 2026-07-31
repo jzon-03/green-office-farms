@@ -7,6 +7,7 @@ import { SolutionsComponent } from './components/solutions/solutions.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FunFactsComponent } from './components/fun-facts/fun-facts.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       {path: 'how-it-works', component: HowItWorksComponent},
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
+      {path: 'fun-facts', component: FunFactsComponent},
     ]
   }
 ];

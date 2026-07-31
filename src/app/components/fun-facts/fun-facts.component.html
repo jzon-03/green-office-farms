@@ -1,0 +1,44 @@
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">By the Numbers</span>
+    <h1>Hydroponics Is More<br><span class="accent">Remarkable Than You Think</span></h1>
+    <p class="hero-sub">The science behind growing food without soil is quietly revolutionising how we think about workplaces, sustainability, and fresh food.</p>
+  </div>
+</section>
+
+<!-- Animated Stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card" *ngFor="let s of stats" #statEl>
+        <span class="stat-icon">{{ s.icon }}</span>
+        <div class="stat-number">{{ s.current }}{{ s.suffix }}</div>
+        <div class="stat-label">{{ s.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fact Cards -->
+<section class="facts-section">
+  <div class="container">
+    <h2 class="section-title">Did You Know?</h2>
+    <div class="facts-grid">
+      <div class="fact-card" *ngFor="let f of facts">
+        <span class="fact-icon">{{ f.icon }}</span>
+        <h3>{{ f.heading }}</h3>
+        <p>{{ f.body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Bring these numbers to your office.</h2>
+    <p>Let's talk about what a hydroponic farm would look like in your space.</p>
+    <a class="cta-btn" routerLink="/contact">Schedule a Free Consultation</a>
+  </div>
+</section>
