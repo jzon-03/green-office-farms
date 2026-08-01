@@ -28,7 +28,7 @@ solutions = [
         'Beautiful office feature',
         'Hands-off maintenance'
       ],
-      image: 'images/employee welness.png',
+      image: 'images/employee_welness.png',
       alt: 'Employee wellness hydroponic garden growing fresh herbs in a Monroe County office'
     },
 
@@ -43,7 +43,7 @@ solutions = [
         'Office branding',
         'Natural air quality benefits'
       ],
-      image: 'images/beautiful spaces.png',
+      image: 'images/beautiful_spaces.png',
       alt: 'Living hydroponic green wall installed in a corporate office reception area'
     },
 
@@ -58,7 +58,7 @@ solutions = [
         'Educational',
         'Sustainable'
       ],
-      image: 'images/harvest fresh.png',
+      image: 'images/harvest_fresh.png',
       alt: 'Fresh hydroponic vegetables and herbs growing in an office break room farm'
     },
 
@@ -73,7 +73,7 @@ solutions = [
         'Maintenance Alerts',
         'Harvest Tracking'
       ],
-      image: 'images/smart technology.png',
+      image: 'images/smart_technology.png',
       alt: 'Smart technology dashboard monitoring an office hydroponic system in real time'
     }
 
