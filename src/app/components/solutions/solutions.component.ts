@@ -28,7 +28,7 @@ solutions = [
         'Beautiful office feature',
         'Hands-off maintenance'
       ],
-      image: 'assets/images/wellness.jpg'
+      image: 'images/employee welness.png'
     },
 
     {
@@ -42,7 +42,7 @@ solutions = [
         'Office branding',
         'Natural air quality benefits'
       ],
-      image: 'assets/images/greenwall.jpg'
+      image: 'images/beautiful spaces.png'
     },
 
     {
@@ -56,7 +56,7 @@ solutions = [
         'Educational',
         'Sustainable'
       ],
-      image: 'assets/images/breakroom.jpg'
+      image: 'images/harvest fresh.png'
     },
 
     {
@@ -70,7 +70,7 @@ solutions = [
         'Maintenance Alerts',
         'Harvest Tracking'
       ],
-      image: 'assets/images/dashboard.jpg'
+      image: 'images/smart technology.png'
     }
 
   ];
