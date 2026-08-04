@@ -1,0 +1,30 @@
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Knowledge Hub</span>
+    <h1>Hydroponics <span class="accent">Articles & Resources</span></h1>
+    <p class="hero-sub">Expert insights on office hydroponics, employee wellness, and building a greener workplace.</p>
+  </div>
+</section>
+
+<!-- Grid -->
+<section class="grid-section">
+  <div class="container">
+    <div class="articles-grid">
+
+      <article class="card" *ngFor="let a of articles()">
+        <div class="card-meta">
+          <span class="category">{{ a.category }}</span>
+          <span class="reading-time">{{ a.readingMinutes }} min read</span>
+        </div>
+        <h2>{{ a.title }}</h2>
+        <p class="description">{{ a.description }}</p>
+        <div class="card-footer">
+          <span class="date">{{ formatDate(a.published) }}</span>
+          <a class="read-link" [routerLink]="['/articles', a.slug]">Read Article &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>

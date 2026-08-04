@@ -8,6 +8,8 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FunFactsComponent } from './components/fun-facts/fun-facts.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { ViewArticleComponent } from './components/view-article/view-article.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,8 @@ const routes: Routes = [
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
       {path: 'fun-facts', component: FunFactsComponent},
+      {path: 'articles', component: ArticlesComponent},
+      {path: 'articles/:slug', component: ViewArticleComponent},
     ]
   }
 ];

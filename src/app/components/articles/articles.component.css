@@ -1,0 +1,144 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.accent { color: #16a34a; }
+
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 16px;
+}
+
+.hero-sub {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+
+/* ── Grid ── */
+.grid-section {
+  padding: 60px 0 80px;
+  background: #f9fafb;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+
+/* ── Card ── */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.08);
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  background: #dcfce7;
+  color: #15803d;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.reading-time {
+  font-size: .82rem;
+  color: #9ca3af;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.description {
+  font-size: .9rem;
+  color: #4b5563;
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.date {
+  font-size: .8rem;
+  color: #9ca3af;
+}
+
+.read-link {
+  font-size: .88rem;
+  font-weight: 600;
+  color: #16a34a;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.read-link:hover { color: #15803d; }
+
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .articles-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .articles-grid { grid-template-columns: 1fr; }
+}

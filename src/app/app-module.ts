@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -12,6 +13,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SafePipe } from './safe.pipe';
 import { FunFactsComponent } from './components/fun-facts/fun-facts.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { ViewArticleComponent } from './components/view-article/view-article.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +28,16 @@ import { FunFactsComponent } from './components/fun-facts/fun-facts.component';
     ContactComponent,
     SafePipe,
     FunFactsComponent,
+    ArticlesComponent,
+    ViewArticleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(),
   ],
   bootstrap: [App]
 })
