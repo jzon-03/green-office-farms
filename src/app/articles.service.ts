@@ -34,7 +34,7 @@ export class ArticlesService {
     return this.cache$;
   }
 
-  getBySlug(slug: string): Observable<Article | undefined> {
-    return this.cache$.pipe(map(articles => articles.find(a => a.slug === slug)));
+  getBySlug(slug: string): Observable<Article | null> {
+    return this.cache$.pipe(map(articles => articles.find(a => a.slug === slug) ?? null));
   }
 }

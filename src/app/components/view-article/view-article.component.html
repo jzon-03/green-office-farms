@@ -1,23 +1,23 @@
 <!-- Not found -->
-<div class="not-found" *ngIf="notFound">
+<div class="not-found" *ngIf="notFound()">
   <p>Article not found.</p>
   <a routerLink="/articles">&larr; Back to Articles</a>
 </div>
 
-<ng-container *ngIf="article">
+<ng-container *ngIf="article() as a">
 
   <!-- Header -->
   <section class="article-hero">
     <div class="container">
       <a class="back-link" routerLink="/articles">&larr; All Articles</a>
-      <span class="category">{{ article.category }}</span>
-      <h1>{{ article.title }}</h1>
+      <span class="category">{{ a.category }}</span>
+      <h1>{{ a.title }}</h1>
       <div class="byline">
-        <span>By {{ article.author }}</span>
+        <span>By {{ a.author }}</span>
         <span class="dot">&bull;</span>
-        <span>{{ formatDate(article.published) }}</span>
+        <span>{{ formatDate(a.published) }}</span>
         <span class="dot">&bull;</span>
-        <span>{{ article.readingMinutes }} min read</span>
+        <span>{{ a.readingMinutes }} min read</span>
       </div>
     </div>
   </section>
@@ -27,7 +27,7 @@
     <div class="container">
       <div class="content">
 
-        <ng-container *ngFor="let block of article.content">
+        <ng-container *ngFor="let block of a.content">
           <p *ngIf="block.type === 'paragraph'">{{ block.text }}</p>
           <h2 *ngIf="block.type === 'heading'">{{ block.text }}</h2>
           <ul *ngIf="block.type === 'list'">
